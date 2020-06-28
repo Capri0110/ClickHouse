@@ -12,27 +12,27 @@ toc_title: "\u5BFC\u8A00"
 
 您可以使用表函数:
 
--   [FROM](../statements/select/from.md) 《公约》条款 `SELECT` 查询。
+-   [FROM](../statements/select/from.md) 语句， 在使用 `SELECT` 查询时。
 
-        The method for creating a temporary table that is available only in the current query. The table is deleted when the query finishes.
+        使用临时表的方法只对当前查询有效，表会在完成查询后自动删除。
 
--   [创建表为\<table\_function()\>](../statements/create.md#create-table-query) 查询。
+-   [CREATE TABLE AS\<table\_function()\>](../statements/create.md#create-table-query) 查询。
 
-        It's one of the methods of creating a table.
+        一个创建表的标准方法
 
 !!! warning "警告"
-    你不能使用表函数，如果 [allow\_ddl](../../operations/settings/permissions-for-queries.md#settings_allow_ddl) 设置被禁用。
+    如果 [allow\_ddl](../../operations/settings/permissions-for-queries.md#settings_allow_ddl) 设置被禁用，你将不能使用表函数。
 
 | 功能               | 产品描述                                                                                               |
 |--------------------|--------------------------------------------------------------------------------------------------------|
-| [文件](file.md)    | 创建一个 [文件](../../engines/table-engines/special/file.md)-发动机表。                                |
-| [合并](merge.md)   | 创建一个 [合并](../../engines/table-engines/special/merge.md)-发动机表。                               |
-| [数字](numbers.md) | 创建一个包含整数填充的单列的表。                                                                       |
-| [远程](remote.md)  | 允许您访问远程服务器，而无需创建 [分布](../../engines/table-engines/special/distributed.md)-发动机表。 |
+| [文件](file.md)    | 创建一个 [File](../../engines/table-engines/special/file.md)-引擎表。                                |
+| [合并](merge.md)   | 创建一个 [Merge](../../engines/table-engines/special/merge.md)-引擎表。                               |
+| [数字](numbers.md) | 创建一个包含整数的单列表。                                                                       |
+| [远程](remote.md)  | 允许您在无需创建 [Distributed](../../engines/table-engines/special/distributed.md)-引擎表时访问远程服务器。 |
 | [url](url.md)      | 创建一个 [Url](../../engines/table-engines/special/url.md)-发动机表。                                  |
-| [mysql](mysql.md)  | 创建一个 [MySQL](../../engines/table-engines/integrations/mysql.md)-发动机表。                         |
-| [jdbc](jdbc.md)    | 创建一个 [JDBC](../../engines/table-engines/integrations/jdbc.md)-发动机表。                           |
-| [odbc](odbc.md)    | 创建一个 [ODBC](../../engines/table-engines/integrations/odbc.md)-发动机表。                           |
-| [hdfs](hdfs.md)    | 创建一个 [HDFS](../../engines/table-engines/integrations/hdfs.md)-发动机表。                           |
+| [mysql](mysql.md)  | 创建一个 [MySQL](../../engines/table-engines/integrations/mysql.md)-引擎表。                         |
+| [jdbc](jdbc.md)    | 创建一个 [JDBC](../../engines/table-engines/integrations/jdbc.md)-引擎表。                           |
+| [odbc](odbc.md)    | 创建一个 [ODBC](../../engines/table-engines/integrations/odbc.md)-引擎表。                           |
+| [hdfs](hdfs.md)    | 创建一个 [HDFS](../../engines/table-engines/integrations/hdfs.md)-引擎表。                           |
 
 [原始文章](https://clickhouse.tech/docs/en/query_language/table_functions/) <!--hide-->
